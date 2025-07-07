@@ -38,12 +38,18 @@ export const About = (props) => {
           </div>
         </div>
 
-        {/* Optional Image */}
-        {/* <div className="row text-center">
-          <div className="col-md-12">
-            <img src="img/about.jpg" className="img-responsive center-block" alt="About us" />
+        
+        <div className="row text-center">
+          <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <img src="img/about/1.jpg" className="img-responsive center-block" alt="About us" />
           </div>
-        </div> */}
+          <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <img src="img/about/2.jpg" className="img-responsive center-block" alt="About us" />
+          </div>
+          <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <img src="img/about/3.jpg" className="img-responsive center-block" alt="About us" />
+          </div>
+        </div> 
       </div>
     </div>
   );

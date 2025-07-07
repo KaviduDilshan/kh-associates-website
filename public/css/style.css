@@ -68,6 +68,8 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
+
+
 /* Navigation */
 #menu {
   padding: 15px;
@@ -80,16 +82,16 @@ hr {
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
-  color: #333;
+  color: #050833;
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #555;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   padding: 8px 2px;
   border-radius: 0;
@@ -168,7 +170,7 @@ hr {
   background: linear-gradient(to right, #182491 0%, #1a1f24 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
-  margin: 0;
+  margin-top: 90px;
   font-size: 15px;
   font-weight: 500;
   border-radius: 25px;
@@ -206,36 +208,41 @@ a:focus,
 .intro {
   position: relative;
   display: flex;
-  justify-content: center;    /* Horizontal centering */
-  align-items: center;        /* Vertical centering */
+  justify-content: flex-start;   /* Changed from center to flex-start */
+  align-items: center;
+  padding-left: 5%;              /* Optional: Add padding for space from left edge */
   width: 100%;
-  height: 95vh;              /* Full viewport height */
+  height: 95vh;
   background: url(../img/back.jpg) center center no-repeat;
   background-color: #e5e5e5;
   background-size: cover;
-  text-align: center;
+  text-align: left;              /* Important: aligns text left */
   margin-top: 70px;
   margin-bottom: 10px;
 }
 
+
 .intro .overlay {
-  position: absolute;
+  /* position: absolute; */
   inset: 0;
   background: rgba(0, 0, 0, 0.2);
 }
 
-.intro-text {
-  position: relative;
+ .intro-text {
+  position: absolute;
+  top: 180px;
+  left: 5%;
   z-index: 1;
+  text-align: left;
 }
+
 
 .intro-text h1 {
   font-family: "Raleway", sans-serif;
   color: #ffffff;
-  font-size: 62px;
+  font-size: 40px;
   font-weight: 800;
   text-transform: uppercase;
-  margin: 0 auto 40px;
 }
 
 .intro-text h1 span {
@@ -290,8 +297,8 @@ a:focus,
 }
 
 #home p{
-  color: #b0d1d8;
   font-size: 20px;
+  color: #bdd2df;
 }
 
 
@@ -327,12 +334,11 @@ a:focus,
   left: 0;
 }
 
-#about img {
-  width: 300px;
-  margin-top: 10px;
-  background: #fff;
-  border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+.about img {
+  width: 100%;
+  height: 300px; /* You can adjust this height */
+  object-fit: cover; /* Ensures image fills space without distortion */
+  border-radius: 10px;
 }
 /* #about p {
   line-height: 24px;
@@ -360,8 +366,8 @@ a:focus,
   max-width: 950px;
   margin: 0 auto ; 
   line-height: 1.6;
-  font-size: 23px;
-  color: #b0d1d8;
+  font-size: 20px;
+  color: #bdd2df;
 }
 
 #services p {
@@ -389,8 +395,8 @@ a:focus,
   left: 50%;
 }
  #services img {
-  width: 70%;
-  height: auto;
+  width: 75%;
+  height: 220px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   border-radius: 50px;
  
@@ -414,24 +420,34 @@ a:focus,
   padding: 100px 0;
 }
 .portfolio-item {
-  margin: 1px -15px 0 -14px;
-  padding: 0;
+  margin: 4px 2px;
+  padding: 1px;
+  border-radius: 10px;
 }
+
+.portfolio-item img {
+  width: 100%;
+  height: 300px; /* You can adjust this height */
+  object-fit: cover; /* Ensures image fills space without distortion */
+  border-radius: 10px;
+}
+
 .portfolio-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
+}
+#portfolio h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  color: #070227;
 }
 .hover-bg .hover-text {
   position: absolute;
   text-align: center;
   margin: 0 auto;
   color: #fff;
-  background: linear-gradient(
-    to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
-  );
   padding: 30% 0 0;
   height: 100%;
   width: 100%;
@@ -478,8 +494,8 @@ a:focus,
   font-weight: 700;
 }
 #contact .p1 {
-  font-size: 18px;
-  color: #d8e7f0;
+  font-size: 20px;
+  color: #bdd2df;
   margin-bottom: 10px;
 }
 #contact .first {
@@ -489,7 +505,7 @@ a:focus,
 /* Form Styles */
 #contact .form-group {
   margin-bottom: 20px;
-  width: 85%;
+  width: 80%;
 }
 #contact .form-control {
   background: #f8f9fa;
@@ -506,7 +522,7 @@ a:focus,
 }
 
 /* Button */
-#contact .btn-custom {
+#contact .btn-M {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
@@ -515,7 +531,7 @@ a:focus,
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
-#contact .btn-custom:hover {
+#contact .btn-M:hover {
   background: #fff;
   color: #1f386e;
 }
@@ -545,7 +561,6 @@ a:focus,
   padding-top: 30px;
   align-items: center;
   justify-content: center;
- 
 }
 
 #contact .social {
@@ -579,14 +594,19 @@ a:focus,
 }
 
 #contact .imgs {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto 10px; /* Center horizontally and space below */
+  display: block;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  border-radius: 50px;
+  border-radius: 10px;
+ /* Makes the image fit without stretching */
 }
 
+
 #contact .con {
-  padding-left: 90px!important;
+  padding-left: 85px;
+  margin-bottom: 40px;
 }
 
 
@@ -612,4 +632,38 @@ a:focus,
   #about img {
     margin: 50px 0;
   }
+}
+
+@media (max-width: 500px) {
+  .intro-text h1 {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro-text {
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  z-index: 1;
+  text-align: left;
+}
+
+#contact .imgs {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 10px;
+}
+#contact .con {
+  padding-left: 40px;
+}
+
+#contact .cons {
+  padding-left: -10px!important;
+}
+ 
 }

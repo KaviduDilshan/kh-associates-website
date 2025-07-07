@@ -14,7 +14,7 @@ export const Services = (props) => {
         </div>
         <div className="row">
           <div className="col-lg-3 col-sm-6 col-md-3">
-            <img src="img/about.jpg"
+            <img src="img/service/1.jpg"
               className="img-responsive center-block"
               alt="About us"/>
               <h3>Tax Planning and Compliance</h3>  
@@ -23,7 +23,7 @@ export const Services = (props) => {
           </div>
 
           <div className="col-lg-3 col-sm-6 col-md-3">
-            <img src="img/about.jpg"
+            <img src="img/service/2.jpg"
               className="img-responsive center-block"
               alt="About us"/> 
               <h3>Financial Statement Preparation</h3> 
@@ -32,7 +32,7 @@ export const Services = (props) => {
           </div>
 
           <div className="col-lg-3 col-sm-6 col-md-3">
-            <img src="img/about.jpg"
+            <img src="img/service/3.jpg"
               className="img-responsive center-block"
               alt="About us"/>
               <h3>Business Advisory and Consulting</h3>
@@ -40,7 +40,7 @@ export const Services = (props) => {
                 to drive growth and success.</p>
           </div>
           <div className="col-lg-3 col-sm-6 col-md-6">
-            <img src="img/about.jpg"
+            <img src="img/service/4.jpg"
               className="img-responsive center-block"
               alt="About us"/>
               <h3>Auditing and Assurance Services</h3>

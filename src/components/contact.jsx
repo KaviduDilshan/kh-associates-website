@@ -43,8 +43,8 @@ export const Contact = (props) => {
     <div>
       <div id="contact">
         <div className="container-fluid ">
-          <div className="row first text-center">
-            <div className="col-md-12">
+          <div className="row first text-center section-title">
+            <div className="col-md-12 col-xs-12 col-sm-12">
               <h2>Get In Touch</h2>
               <p className="p1">
                 At K & H Associates, we provide expert chartered accounting
@@ -57,9 +57,9 @@ export const Contact = (props) => {
             </div>
           </div>
 
-          <div className="row  contact align-items-center text-start">
+          <div className="row  contact  contact-info">
             {/* Contact Form */}
-            <div className="col-lg-4 col-md-6 mt-4">
+            <div className="con col-lg-4  mt-4 ">
               <form name="sentMessage" onSubmit={handleSubmit}>
                 <div className="form-group ">
                   <input
@@ -97,48 +97,40 @@ export const Contact = (props) => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-custom btn-lg mt-3">
+                <button type="submit" className="btn btn-M btn-lg mt-3">
                   Send Message
                 </button>
               </form>
             </div>
 
             {/* Contact Info Block 1 */}
-            <div className="col-lg-4 col-md-6 mt-4 contact-info">
-              <div className="row">
-                <div className="col-lg-6 col-md-6 ">
-                  <img src="img/about.jpg"
-              className="imgs center-block"
-              alt="About us"/>
+            <div className="col-lg-8 col-md-6 mt-4 contact-info">
+              <div className="row cons justify-content-center">
+                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <img src="img/QR.png" className="imgs" alt="QR Code" />
                 </div>
-                <div className="col-lg-6 col-md-6 ">
-                  <img src="img/about.jpg"
-              className="imgs center-block"
-              alt="About us"/>
-                </div>
-              </div>
-            </div>
 
-            {/* Contact Info Block 2 (duplicate or different branch maybe?) */}
-            <div className="con col-lg-4 col-md-6 mt-4 contact-info">
-              <h3>Contact Info</h3>
-              <div>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address:
-                </span>
-                <p>No.254, 2nd Floor, Colombo Road, Kurunegala</p>
-              </div>
-              <div>
-                <span>
-                  <i className="fa fa-phone"></i> Phone:
-                </span>
-                <p>+94 37 222 4200 | +94 71 062 5518</p>
-              </div>
-              <div>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email:
-                </span>
-                <p>associateskandh@gmail.com</p>
+                <div className="cons col-xs-6 col-sm-6 col-md-6 col-lg-6 cons">
+                  <h3>Contact Info</h3>
+                  <div>
+                    <span>
+                      <i className="fa fa-map-marker"></i> Address:
+                    </span>
+                    <p>No.254, 2nd Floor, Colombo Road, Kurunegala</p>
+                  </div>
+                  <div>
+                    <span>
+                      <i className="fa fa-phone"></i> Phone:
+                    </span>
+                    <p>+94 37 222 4200 | +94 71 062 5518</p>
+                  </div>
+                  <div>
+                    <span>
+                      <i className="fa fa-envelope-o"></i> Email:
+                    </span>
+                    <p>associateskandh@gmail.com</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

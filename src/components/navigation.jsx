@@ -18,7 +18,17 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            K & R Associates
+            <img
+              src="/img/logo.webp" // <-- Change this path to your actual logo file
+              alt="Logo"
+              style={{
+                height: "50px",
+                width:"150px",
+                marginRight: "5px",
+                display: "inline-block",
+                verticalAlign: "middle",
+              }}
+            />
           </a>{" "}
         </div>
 
@@ -47,7 +57,6 @@ export const Navigation = (props) => {
                 Contact us
               </a>
             </li>
-            
           </ul>
         </div>
       </div>
