@@ -59,7 +59,7 @@ export const Contact = (props) => {
 
           <div className="row  contact  contact-info">
             {/* Contact Form */}
-            <div className="con col-lg-4  mt-4 ">
+            <div className="con text-center col-lg-4  mt-4 ">
               <form name="sentMessage" onSubmit={handleSubmit}>
                 <div className="form-group ">
                   <input
@@ -105,8 +105,8 @@ export const Contact = (props) => {
 
             {/* Contact Info Block 1 */}
             <div className="col-lg-8 col-md-6 mt-4 contact-info">
-              <div className="row cons justify-content-center">
-                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div className="row  justify-content-center">
+                <div className="cons col-xs-6 col-sm-6 col-md-6 col-lg-6">
                   <img src="img/QR.png" className="imgs" alt="QR Code" />
                 </div>
 

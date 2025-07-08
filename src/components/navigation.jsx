@@ -17,13 +17,13 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <a className="logo" href="#page-top">
             <img
               src="/img/logo.webp" // <-- Change this path to your actual logo file
               alt="Logo"
               style={{
-                height: "50px",
-                width:"150px",
+                height: "80px",
+                width:"200px",
                 marginRight: "5px",
                 display: "inline-block",
                 verticalAlign: "middle",
