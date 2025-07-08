@@ -23,7 +23,7 @@ export const Navigation = (props) => {
               alt="Logo"
               style={{
                 height: "80px",
-                width:"200px",
+                width: "200px",
                 marginRight: "5px",
                 display: "inline-block",
                 verticalAlign: "middle",
@@ -50,6 +50,11 @@ export const Navigation = (props) => {
             <li>
               <a href="#services" className="page-scroll">
                 Services
+              </a>
+            </li>
+            <li>
+              <a href="#gallery" className="page-scroll">
+                Gallery
               </a>
             </li>
             <li>
