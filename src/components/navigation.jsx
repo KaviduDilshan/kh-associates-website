@@ -28,8 +28,8 @@ export const Navigation = (props) => {
               src="/img/logo.webp"
               alt="Logo"
               style={{
-                height: "80px",
-                width:"200px",
+                height: "60px",
+                width:"160px",
                 marginRight: "5px",
                 display: "inline-block",
                 verticalAlign: "middle",

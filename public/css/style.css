@@ -304,7 +304,6 @@ a:focus,
   background: linear-gradient(to right, #182491 0%, #1a1f24 100%);
   border-radius: 40px;
   padding-top: 40px;
-  /* Adjust based on your navbar height */
   margin-top: -80px;
 
 }
@@ -323,7 +322,7 @@ a:focus,
 }
 
 #home h2 {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 #home h3 {
@@ -351,6 +350,7 @@ a:focus,
   margin-bottom: 15px;
   padding-bottom: 15px;
   color: #070227;
+  margin-top: 50px;
 }
 
 .about-text p {
@@ -451,7 +451,7 @@ a:focus,
 }
 
 #services h2 {
-  color: #fff;
+  color: #ffffff;
   margin-top: -20px;
 }
 
@@ -506,8 +506,8 @@ a:focus,
   padding: 100px 0;
 }
 .portfolio-item {
-  margin: 2px 1px;
-  padding: 8px;
+  margin: 1px 1px;
+  padding: 4px;
   border-radius: 10px;
   margin-bottom: 40px;
 }
@@ -870,3 +870,4 @@ a:focus,
     color: rgba(255, 255, 255, 0.9);
   }
 }
+
