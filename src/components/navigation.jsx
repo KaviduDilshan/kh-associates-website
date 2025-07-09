@@ -28,8 +28,8 @@ export const Navigation = (props) => {
               src="/img/logo.webp"
               alt="Logo"
               style={{
-                height: "60px",
-                width: "180px",
+                height: "80px",
+                width:"200px",
                 marginRight: "5px",
                 display: "inline-block",
                 verticalAlign: "middle",
@@ -54,28 +54,21 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a
-                href="#services"
-                className="page-scroll"
-                onClick={handleNavClick}
+              <a href="#services" className="page-scroll" onClick={handleNavClick}
               >
                 Services
               </a>
             </li>
             <li>
               <a
-                href="#gallery"
-                className="page-scroll"
-                onClick={handleNavClick}
+                href="#gallery"className="page-scroll" onClick={handleNavClick}
               >
                 Gallery
               </a>
             </li>
             <li>
               <a
-                href="#contact"
-                className="page-scroll"
-                onClick={handleNavClick}
+                href="#contact" className="page-scroll" onClick={handleNavClick}
               >
                 Contact us
               </a>
