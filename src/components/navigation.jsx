@@ -1,6 +1,13 @@
 import React from "react";
 
 export const Navigation = (props) => {
+  const handleNavClick = () => {
+    const nav = document.querySelector(".navbar-collapse");
+    if (nav && nav.classList.contains("in")) {
+      nav.classList.remove("in"); // Bootstrap 3 collapse class
+    }
+  };
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -11,25 +18,24 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
           <a className="logo" href="#page-top">
             <img
-              src="/img/logo.webp" // <-- Change this path to your actual logo file
+              src="/img/logo.webp"
               alt="Logo"
               style={{
-                height: "80px",
-                width:"200px",
+                height: "60px",
+                width: "180px",
                 marginRight: "5px",
                 display: "inline-block",
                 verticalAlign: "middle",
               }}
             />
-          </a>{" "}
+          </a>
         </div>
 
         <div
@@ -38,22 +44,39 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#home" className="page-scroll">
+              <a href="#home" className="page-scroll" onClick={handleNavClick}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
+              <a href="#about" className="page-scroll" onClick={handleNavClick}>
                 About us
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a
+                href="#services"
+                className="page-scroll"
+                onClick={handleNavClick}
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <a
+                href="#gallery"
+                className="page-scroll"
+                onClick={handleNavClick}
+              >
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="page-scroll"
+                onClick={handleNavClick}
+              >
                 Contact us
               </a>
             </li>

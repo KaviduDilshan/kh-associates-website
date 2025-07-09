@@ -289,7 +289,7 @@ a:focus,
 #home h3{
   color: #fff;
   font-size: 30px;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 #home p{
@@ -314,9 +314,9 @@ a:focus,
 }
 
 .about-text p {
-  margin: 0 auto 20px; 
+  margin: 0 auto -10px; 
   font-size: 23px;
-  text-align: justify;
+  text-align: left;
   color: #48494b;
 }
 
@@ -330,12 +330,75 @@ a:focus,
   left: 0;
 }
 
-.about img {
-  width: 100%;
-  height: 300px; /* You can adjust this height */
-  object-fit: cover; /* Ensures image fills space without distortion */
+.counter-box {
+  margin-top: -40px;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
   border-radius: 10px;
+  background-color: #e0e6ec;
+  box-shadow: rgba(11, 45, 235, 0.4) 5px 5px, rgba(13, 22, 148, 0.3) 10px 10px, rgba(7, 5, 131, 0.2) 15px 15px, 
+  rgba(14, 33, 202, 0.1) 20px 20px, rgba(36, 39, 235, 0.05) 25px 25px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
+
+.counter-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.counter-box i {
+  font-size: 17px;
+  color: #041b35;
+  margin-bottom: 10px;
+}
+
+.counter-box .num {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #080335;
+}
+
+.counter-box .text {
+  font-size: 17px;
+  color: #092946;
+  margin-top: 5px;
+  font-weight:bold;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .counter-box {
+    width: 160px;
+    padding: 15px;
+  }
+  .counter-box .num {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .counter-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+/* .about img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; 
+  border-radius: 10px;
+} */
 
 
 
@@ -392,22 +455,34 @@ a:focus,
   height: 160px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   border-radius: 50px;
- 
 }
 #services .service-desc {
   margin-bottom: 40px;
 }
 
 
-
-
-/* Portfolio Section */
-#portfolio {
+/* gallery Section */
+#gallery {
   padding: 100px 0;
 }
+
+#gallery h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  color: #070227;
+}
+
+#gallery p {
+  position: relative;
+  font-size: 20px;
+  color: #48494b;
+  margin-bottom: -30px;
+}
 .portfolio-item {
-  margin: 4px 2px;
-  padding: 1px;
+  margin: 2px 1px;
+  padding: 8px;
   border-radius: 10px;
 }
 .portfolio-item img {
@@ -422,12 +497,7 @@ a:focus,
   position: relative;
   margin: 0;
 }
-#portfolio h2 {
-  position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  color: #070227;
-}
+
 .hover-bg .hover-text {
   position: absolute;
   text-align: center;
@@ -616,11 +686,17 @@ a:focus,
 
 @media (max-width: 768px) {
   #about img {
-    margin: 30px auto; /* center vertically with top/bottom spacing */
+    margin: 10px auto; /* center vertically with top/bottom spacing */
     max-width: 80%;    /* reduce width */
     height: auto;      /* maintain aspect ratio */
     display: block;    /* ensure center-block works */
   }
+   #services img {
+  width: auto;
+  height: 160px;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 50px;
+}
 }
 
 
@@ -652,7 +728,7 @@ a:focus,
 #home h3{
   color: #fff;
   font-size: 25px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 #home p{
@@ -706,10 +782,11 @@ a:focus,
 }
 
 /* gallery */
-#portfolio p{
-  font-size: 17px;
+#gallery p {
+  position: relative;
+  font-size: 20px;
   color: #48494b;
-  margin-bottom: 10px;
+  margin-bottom: -40px;
 }
 
 /* contact */
@@ -745,4 +822,32 @@ a:focus,
   margin-bottom: 15px;
   color: rgba(255, 255, 255, 0.9);
 }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  #menu.navbar-default .navbar-nav > li > a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 9px 20px 0;
+}
+#menu .logo {
+  height: 40px;
+  width: 130px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 230px; /* You can adjust this height */
+  object-fit: cover; /* Ensures image fills space without distortion */
+  border-radius: 10px;
+}
+
 }

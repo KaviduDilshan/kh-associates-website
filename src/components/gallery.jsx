@@ -3,12 +3,14 @@ import React from "react";
 
 export const Gallery = (props) => {
   return (
-    <div id="portfolio" className="text-center">
+    <div id="gallery" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
           <p>
-             A glimpse into our journey — from trusted client partnerships to key milestones that shape our financial expertise.
+             A glimpse into our journey — from building trusted client relationships and achieving major 
+             financial milestones to the dedication, teamwork, and innovation that define K & H Associates. 
+             Each moment captured reflects our commitment to excellence and the trust our clients place in us.
           </p>
         </div>
         <div className="row">

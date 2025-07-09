@@ -6,7 +6,7 @@ export const Features = (props) => {
       <div className="container-fluid">
         <div className="row">
           <div className=" section-title">
-            <h2>Home</h2>
+            
             </div>
         </div>
         
