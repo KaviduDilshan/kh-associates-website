@@ -246,24 +246,19 @@ a:focus,
   position: relative;
   display: flex;
   justify-content: flex-start;
-  /* Changed from center to flex-start */
   align-items: center;
   padding-left: 5%;
-  /* Optional: Add padding for space from left edge */
   width: 100%;
   height: 95vh;
   background: url(../img/back.jpg) center center no-repeat;
   background-color: #e5e5e5;
   background-size: cover;
   text-align: left;
-  /* Important: aligns text left */
   margin-top: 70px;
   margin-bottom: 10px;
 }
 
-
 .intro .overlay {
-  /* position: absolute; */
   inset: 0;
   background: rgba(0, 0, 0, 0.2);
 }
@@ -275,7 +270,6 @@ a:focus,
   z-index: 1;
   text-align: left;
 }
-
 
 .intro-text h1 {
   font-family: "Raleway", sans-serif;
@@ -371,7 +365,7 @@ a:focus,
 }
 
 .counter-box {
-  margin-top: -40px;
+  margin-top: -60px;
   width: 200px;
   height: 200px;
   padding: 20px;
@@ -411,31 +405,15 @@ a:focus,
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 100px;
   margin-top: 40px;
 }
 
-@media screen and (max-width: 992px) {
-  .counter-box {
-    width: 160px;
-    padding: 15px;
-  }
-  .counter-box .num {
-    font-size: 1.8em;
-  }
+#about img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
-
-@media screen and (max-width: 576px) {
-  .counter-box {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-
-
-
-
 
 /* Services Section */
 #services {
@@ -512,12 +490,16 @@ a:focus,
   margin-bottom: 40px;
 }
 
+#gallery p {
+  font-size: 20px;
+  color: #48494b;
+  margin-bottom: -40px;
+}
+
 .portfolio-item img {
   width: 100%;
   height: 300px;
-  /* You can adjust this height */
   object-fit: cover;
-  /* Ensures image fills space without distortion */
   border-radius: 10px;
 }
 
@@ -566,7 +548,6 @@ a:focus,
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
-
 
 
 /* Contact Section */
@@ -701,20 +682,16 @@ a:focus,
   width: 200px;
   height: 200px;
   margin: 20px auto 10px;
-  /* Center horizontally and space below */
   display: block;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   border-radius: 10px;
-  /* Makes the image fit without stretching */
 }
-
 
 #contact .con {
   padding-left: 85px;
   padding-right: 85px;
   margin-bottom: 10px;
 }
-
 
 
 
@@ -744,11 +721,18 @@ a:focus,
     height: auto;      /* maintain aspect ratio */
     display: block;    /* ensure center-block works */
   }
+
+  .intro-text h1 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
 
 @media (max-width: 500px) {
-
   /* home */
   .intro-text h1 {
     font-family: "Raleway", sans-serif;
@@ -766,16 +750,10 @@ a:focus,
     text-align: left;
   }
 
-  #home h2 {
-    margin-top: 100px;
-    font-size: 35px;
-
-  }
-
 #home h3{
   color: #fff;
   font-size: 25px;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
   #home p {
@@ -793,11 +771,39 @@ a:focus,
   }
 
   .about-text p {
-    margin: 0 auto 15px;
+    margin: 0 auto ;
     font-size: 17px;
     text-align: justify;
     color: #48494b;
+    margin-bottom: -80px!important;
   }
+
+  .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+  
+  .counter-box .num {
+    font-size: 1.8em;
+  }
+
+  .counter-box {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 30px;
+    margin-bottom: -70px;
+    padding: 15px;
+    height: auto;
+  }
+
+  #about img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
 
   /* service */
   #services h2 {
@@ -833,6 +839,13 @@ a:focus,
   font-size: 17px;
   color: #48494b;
   margin-bottom: 10px;
+}
+
+#gallery h2 {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  margin-top: -10px;
+  color: #070227;
 }
 
   /* contact */
@@ -871,3 +884,119 @@ a:focus,
   }
 }
 
+@media (min-width: 500px) and (max-width: 992px) {
+  /* nav */
+ #menu .logo{
+  height: 20px;
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+#menu.navbar-default .navbar-nav>li>a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #555;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 9px 20px 0;
+}
+
+/* home */
+  .intro-text h1 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .intro-text {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    z-index: 1;
+    text-align: left;
+  }
+
+#home h3{
+  color: #fff;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+/* about */
+#about h2 {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #070227;
+    font-size: 35px;
+    margin-top: 30px;
+  }
+
+    .about-text p {
+    margin: 0 auto ;
+    font-size: 17px;
+    text-align: justify;
+    color: #48494b;
+    margin-bottom: -50px;
+  }
+
+ .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 90px;
+} 
+  .counter-box .num {
+    font-size: 1.8em;
+  }
+
+  .counter-box {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 30px;
+    margin-bottom: -70px;
+    padding: 15px;
+    height: auto;
+  }
+
+  #about img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+  /* service */
+   #services h2 {
+    color: #fff;
+    margin-top: -30px;
+    font-size: 35px;
+  }
+
+  /* gallery */
+#gallery h2 {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  margin-top: -20px;
+  color: #070227;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* contact */
+ #contact h2 {
+    color: #fff;
+    font-size: 35px;
+    margin-top: -20px;
+  }
+}

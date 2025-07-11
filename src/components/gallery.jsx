@@ -8,7 +8,9 @@ export const Gallery = (props) => {
         <div className="section-title">
           <h2 className="gallery_header">Gallery</h2>
           <p>
-             A glimpse into our journey — from trusted client partnerships to key milestones that shape our financial expertise.
+             A glimpse into our journey — from trusted client partnerships and landmark achievements to the people
+              and moments that define our commitment to financial excellence. At K & H Associates, every milestone 
+              reflects our dedication to empowering clients with clarity, confidence, and success.
           </p>
         </div>
         <div className="row">

@@ -84,22 +84,34 @@ export const About = () => {
         <div ref={counterRef} className="row text-center mt-5">
           <div className="wrapper d-flex justify-content-center flex-wrap">
             <div className="counter-box mx-3 my-3">
-              <i className="fas fa-briefcase fa-2x mb-2 text-primary"></i>
+              <img
+                src="/img/about/1.png"
+                alt="Experience Icon"
+              />
               <div className="num" data-val="20">000</div>
               <div className="text">Experiance</div>
             </div>
             <div className="counter-box mx-3 my-3">
-              <i className="fas fa-smile-beam fa-2x mb-2 text-primary"></i>
+              <img
+                src="/img/about/2.png"
+                alt="Experience Icon"
+              />
               <div className="num" data-val="500">000</div>
               <div className="text">Happy Clients</div>
             </div>
             <div className="counter-box mx-3 my-3">
-              <i className="fas fa-file-invoice-dollar fa-2x mb-2 text-primary"></i>
+              <img
+                src="/img/about/3.png"
+                alt="Experience Icon"
+              />
               <div className="num" data-val="100">000</div>
               <div className="text">Employees</div>
             </div>
             <div className="counter-box mx-3 my-3">
-              <i className="fas fa-star fa-2x mb-2 text-primary"></i>
+              <img
+                src="/img/about/4.png"
+                alt="Experience Icon"
+              />
               <div className="num" data-val="1000">000</div>
               <div className="text">Total projects</div>
             </div>
